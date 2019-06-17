@@ -6,6 +6,10 @@ function takeANumber (currentLineOfPeople, name) {
   return 'Welcome, '+ name +'. You are number ' + position + ' in line.'
 }
 
+function takeANumber(line){
+  return 'WelCome'
+}
+
 function nowServing(line) {
   if(line.length === 0) {
     return 'There is nobody waiting to be served!';
