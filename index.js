@@ -5,10 +5,14 @@ function takeANumber (currentLineOfPeople, name) {
   let position = currentLineOfPeople.length;
   return 'Welcome, '+ name +'. You are number ' + position + ' in line.'
 }
-
+let ticketNumber = 0;
 function takeANumber(line){
-  return 'WelCome'
+  
+  ticketNumber++;
+  line.push(ticketNumber);
+  return 'WelCome, ' + ' You are ticket number ' + ticketNumber
 }
+
 
 function nowServing(line) {
   if(line.length === 0) {
